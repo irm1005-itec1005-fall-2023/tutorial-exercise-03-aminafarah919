@@ -18,7 +18,7 @@
 /* Styles for the HTML Body element */
 
 body {
-  background-color: #457b9dff;
+  background-color:  #1d3557ff;
   /* Add a background colour of #1d3557ff */
 }
 
@@ -26,6 +26,9 @@ body {
 /* Then move onto the header styles */
 
 header {
+  color: #f1faeeff ;
+  margin: 0%;
+  padding: 2%;
   /* Set the text colour, margins and padding */
 }
 main .header {
@@ -101,6 +104,9 @@ header a:hover {
  */
 
 main > section {
+  margin: 0.5%;
+  padding: 2rem;
+  background-color: #457b9dff ;
   /* Set the margins, padding and background colour */
   /* Set the border radius to give it rounded corners */
 }
@@ -114,18 +120,28 @@ main > section:last-child {
 
 /* Now let's setup the Hero section in main styles */
 main section.hero {
+  padding: 0rem;
+  background-color: #f1faeeff;
+  border-radius: 2rem;
   /* Start by setting the padding */
   /* Set the background colour */
   /* Set the border radius to give it rounded corners */
 }
 
 main section.hero h1 {
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 0;
+
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
 }
 
 main section.hero .secondary-heading {
+  font-size: medium;
+  letter-spacing: 0;
+  text-align: center;
   /* Set the font size, margins and text colour */
   /* Experiment with letter-spacing to see what it does */
   /* Google how to align text in the center */
@@ -147,10 +163,17 @@ main section.hero img {
 /* Next up is the second section, which is our menu styles */
 
 main section.menu {
+  padding: 2%;
+  background-color: #f1faeeff;
+  ;
+  border-radius: 2%;
   /* Set the padding, background colour and border radius */
 }
 
 main section.menu ul {
+  list-style: none;
+  margin: 0%;
+
   /* Remove the list styles */
   /* Experiment with list-style property
    * to see what it does and how to remove
@@ -160,9 +183,19 @@ main section.menu ul {
 }
 
 main section.menu ul li {
+  padding: 0%;
+  border-radius: 0%;
+  margin-top: 2rem;
+  background-color: bisque;
   /* Set the padding, margin-top and border radius */
   /* Set the background colour */
 }
+
+main section.menu ul li :nth-child(even) {
+  background-color: rgb(201, 157, 236);
+  color: rgb(237, 250, 246);
+}
+
 
 /* Use psuedo classes nth-child(even)
  * to give ever second list item in main
@@ -179,6 +212,9 @@ main section.menu ul li {
 /* Almost done! The last section is our testimonial styles */
 
 main section.testimonials {
+  padding: 0%;
+  background-color: #457b9dff ;
+  border-radius: 1%;
   /* Set the padding and background colour #f1faeeff */
   /* Set the border radius */
 }
@@ -193,11 +229,29 @@ main section.testimonials {
     design a sweet heading h2
 
 */
+main section.testimonials h2 {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  font-style: inherit;
+  color: #1d3557ff;
+}
+
 
 main section.testimonials img {
   width: 100%;
   max-width: 100%;
   /* Put a border radius on just the top of the image */
+}
+
+main section.testimonials blockquote {
+  text-align: center;
+  font-size: medium;
+  font-style: italic;
+  color: azure;
+  background-color:#457b9dff;
+  border-radius: 3rem;
+
 }
 
 /*
@@ -226,7 +280,7 @@ main section.testimonials img {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #242121;
+  color: #1f21a7;
   font-size: 1.2rem;
   line-height: 1.6;
 }
